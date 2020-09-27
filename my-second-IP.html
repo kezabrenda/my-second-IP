@@ -9,81 +9,91 @@
 </head>
 <body>
     <div class="container">
-        <h1><strong>AKAN   NAMES</strong></h1>
-        <h3><strong>DESCRIPTION:</strong></h3>
-        <p>This is a website which allows you to know your Akan name just by providing your birth year, date and month.<br>
-           Don't know what Akan names are? We got you covered!<br>
-           Akan names are derived from Ghanaian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<br>
-           Here are Ghanaian day names:
-        </p>
-        <p><i class="fas fa-male"></i>
-            <strong>Male</strong>
-        </p>
-
-        <ul>
-            <li>Sunday: Kwasi</li>
-            <li>Monday: Kwadwo</li>
-            <li>Tuesday: Kwabena</li>
-            <li>Wednesday: Kwaku</li>
-            <li>Thursday: Yaw</li>
-            <li>Friday: Kofi</li> 
-            <li>Saturday: Kwame</li>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <h1><strong>AKAN  <span class="names">NAMES</span></strong></h1>
+            <p class="fs12">This is a website which allows you to know your Akan name just by providing your birth year, date and month.<br>
+                            Don't know what Akan names are? We got you covered!<br>
+                            Akan names are derived from Ghanaian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<br>
+            </p> 
+            
+            <p class="fs11">Here are Ghanaian day names:</p>
+            
+            <p class=""><i class="fas fa-male"></i>
+                <strong>Male</strong>
+            </p>
+            
+            <ul class="fs11">
+                <li>Sunday: <span class="names">Kwasi</span></li>
+                <li>Monday: <span class="names">Kwadwo</span></li>
+                <li>Tuesday: <span class="names">Kwabena</span></li>
+                <li>Wednesday: <span class="names">Kwaku</span></li>
+                <li>Thursday: <span class="names">Yaw</span></li>
+                <li>Friday: <span class="names">Kofi</span></li> 
+            <li>Saturday: <span class="names">Kwame</span></li>
         </ul>
     
 
-        <p><i class="fas fa-female"></i> 
+        <p class="fs12"><i class="fas fa-female"></i> 
             <strong>Female</strong>
         </p>
 
-        <ul>
-            <li>Sunday: Akosua</li>
-            <li>Monday: Adwoa</li>
-            <li>Tuesday: Abenaa</li>
-            <li>Wednesday: Akua</li>
-            <li>Thursday: Yaa</li>
-            <li>Friday: Afua</li>
-            <li>Saturday: Ama</li>
+        <ul class="fs11">
+            <li>Sunday: <span class="names">Akosua</span></li>
+            <li>Monday: <span class="names">Adwoa</span></li>
+            <li>Tuesday: <span class="names">Abenaa</span></li>
+            <li>Wednesday: <span class="names">Akua</span></li>
+            <li>Thursday: <span class="names">Yaa</span></li>
+            <li>Friday: <span class="names">Afua</span></li>
+            <li>Saturday: <span class="names">Ama</span></li>
         </ul>
 
-        <p>Interested to find out your Akan name now? Then please fill the form below and we will get back to you in no time.</p>
+        <p class="fs12">Interested to find out your Akan name now? Then please fill the form below and we will get back to you in no time.</p>
+    
+    
+        <div class="col-md-4 mt30 akan-form">
+            <h5>Please Enter Your Birthdate Here:</h5>
+            <div class="add-stylist-form">
+                <form>
+                    <div class="form-group mb15">
+                          <label class="label">Birthday</label>
+                           <div class="input-group mb15">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input type="text" placeholder="mm/dd/yyyy" id="myBirthDate" class="form-control" autocomplete="off">
+                         </div>
+                    </div>   
 
+                    <div class="form-group mb15">
+                          <label class="label">Gender</label>
+                           <div class="rdio rdio-default fs11">
+                            <input type="radio" name="gender" id="male" value="Male">
+                            <label for="male">&nbsp;&nbsp;Male</label>
+                        </div>
+                        <div class="rdio rdio-default fs11">
+                            <input type="radio" name="gender" value="Female" id="female">
+                            <label for="female">&nbsp;&nbsp;Female</label>
+                         </div>
+                    </div>
+                    <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
+                    <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>		
+					</form>	
+				</div>
+				<hr>
+				<div class="your-akan-name">
+					<p id="message" class="output"></p>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
 
-    <div class="container2">
-        <form id="">
-        <label for="centuryDigits">Century Digits</label>
-        <input type="number" id="centuryDigits" placeholder="eg: 1989 has = 19..."><br>
-
-        <label for="yearDigits">Year Digits</label>
-        <input type="number" id="yearDigits" placeholder="eg: 1989 has = 89..."><br>
+		<footer class="footer"><p>2020 All Rights Reserved. Akan Names Application.</p></footer>
+	</div>
+	<script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="my-second-IP2.js"></script>
     
-        <label for="birthMonth">Birth Month</label>
-        <select class="custom-select" id="birthMonth" name="">
-            <option value="0">Month...</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-        </select>
-    
-        <label for="DoM">Day of month</label>
-        <input type="number" id="DoM" placeholder="type your date of month..."><br>
-    
-        <label for="gender">Gender</label>
-        <select id="gender">
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-        </select><br>
-    
-        <input type="submit" value="Submit" onclick="getName()"> 
-        </form>
     </div>
+
 </body>
 </html>

@@ -1,14 +1,6 @@
 var currentDate = new Date();
 var currentYear = currentDate.getFullYear();
 
-function giveName() {
-  var name = document.getElementById("yourNames").value;
-  if (name == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-
 function selectGender() {
   var gender = document.getElementById("gender").value;
   if (gender == "1") {
@@ -25,7 +17,7 @@ function givenCentury() {
   }
 }
 
-function giveYear() {
+function givenYear() {
   var year = document.getElementById("yearDigits").value;
   if (year == "") {
     alert("Year must be filled out");
@@ -33,7 +25,7 @@ function giveYear() {
   }
 }
 
-function giveMonth() {
+function givenMonth() {
   var month = document.getElementById("birthMonth").value;
   if (month == "0") {
     alert("Month must be selected");
@@ -41,7 +33,7 @@ function giveMonth() {
   }
 }
 
-function giveDay() {
+function givenDay() {
   var day = document.getElementById("DoM").value;
   if (day == "") {
     alert("Day must be filled out");
