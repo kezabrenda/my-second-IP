@@ -31,6 +31,10 @@ function givenMonth() {
     alert("Month must be selected");
     return false;
   }
+  else if (month <= 0 || month > 12) {
+    alert("Invalid Month");
+    return false;
+  }
 }
 
 function givenDay() {
@@ -39,7 +43,11 @@ function givenDay() {
     alert("Day must be filled out");
     return false;
   }
-}
+  else if (day <= 0 || day > 31) {
+    alert("Invalid Day");
+    return false;
+  }
+} 
 
 function allLetters(input){
   var characters = /[^a-z]/gi;
