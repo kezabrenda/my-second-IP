@@ -18,39 +18,39 @@ sign up for a Github account
 Get started!
 
 ### BDD
-Displays Form For Entering Date and Gender
+1. Displays Form For Entering Date and Gender
 
-INPUT: "User's Birthdate Entered"
+  * INPUT: "User's Birthdate Entered"
 
-INPUT: "User's Gender Entered"
+  * INPUT: "User's Gender Entered"
 
-OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
+  * OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
 
-Displays an Error Message if Date Input Left Blank
+2. Displays an Error Message if Date Input Left Blank
 
-INPUT: ""
+  * INPUT: ""
 
-OUTPUT: "Displays Error Message"
+  * OUTPUT: "Displays Error Message"
 
-Displays an Error Message if Gender Not Chosen
+3. Displays an Error Message if Gender Not Chosen
 
-INPUT: ""
+  * INPUT: ""
 
-OUTPUT: "Display an Error Message"
+  * OUTPUT: "Display an Error Message"
 
-Clears Form and Reset the Message on Click
+4. Clears Form and Reset the Message on Click
 
-INPUT: "Click Reset Button"
+  * INPUT: "Click Reset Button"
 
-OUTPUT: "Clears and Resets the Form"
+  * OUTPUT: "Clears and Resets the Form"
 
 
 ### Technologies used:
-* HTML
-* CSS 
-* JavaScript
-* MarkDown
-* Bootstrap
+  * HTML
+  * CSS 
+  * JavaScript
+  * MarkDown
+  * Bootstrap
 
 ### Contact information
 For any further explaination, questions or suggestions, feel free to contact me keza1brenda@gmail.com
