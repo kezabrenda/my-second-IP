@@ -11,19 +11,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
+            <img src="first.jpg">
             <h1><strong>AKAN  NAMES</strong></h1>
-            <p class="fs12">This is a website which allows you to know your Akan name just by providing your birth year, date and month.<br>
+            <p>This is a website which allows you to know your Akan name just by providing your birth year, date and month.<br>
                             Don't know what Akan names are? We got you covered!<br>
                             Akan names are derived from Ghanaian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<br>
+                            Here are Ghanaian day names:
+            
             </p> 
             
-            <p class="fs12">Here are Ghanaian day names:</p>
-            
-            <p class="fs12"><i class="fas fa-male"></i>
+            <p><i class="fas fa-male"></i>
                 <strong>Male</strong>
             </p>
             
-            <ul class="fs11">
+            <ul>
                 <li>Sunday: Kwasi</li>
                 <li>Monday: Kwadwo</li>
                 <li>Tuesday: Kwabena</li>
@@ -34,11 +35,11 @@
         </ul>
     
 
-        <p class="fs12"><i class="fas fa-female"></i> 
+        <p><i class="fas fa-female"></i> 
             <strong>Female</strong>
         </p>
 
-        <ul class="fs11">
+        <ul>
             <li>Sunday: Akosua</li>
             <li>Monday: Adwoa</li>
             <li>Tuesday: Abenaa</li>
@@ -48,7 +49,7 @@
             <li>Saturday: Ama</li>
         </ul>
 
-        <p class="fs12">Interested to find out your Akan name now? Then please fill the form below and we will get back to you in no time.</p>
+        <p>Interested to find out your Akan name now? Then please fill the form below and we will get back to you in no time.</p>
     
     
         <div class="col-md-4 mt30 akan-form">
@@ -91,7 +92,7 @@
                             <label for="female">&nbsp;&nbsp;Female</label>
                          </div>
                     </div>
-                    <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
+                    <button type="submit" onclick="selectGender(),givenCentury(),givenYear(),givenMonth(),givenDay(), getAkanName(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
                     <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>		
 					</form>	
 				</div>
