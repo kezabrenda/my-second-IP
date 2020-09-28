@@ -5,7 +5,7 @@ function selectGender() {
   var gender = document.getElementById("gender").value;
   if (gender == "1") {
     alert("Gender must be selected");
-    return false;
+    return false; 
   }
 }
 
