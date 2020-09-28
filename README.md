@@ -19,17 +19,29 @@ Get started!
 
 ### BDD
 Displays Form For Entering Date and Gender
+
 INPUT: "User's Birthdate Entered"
+
 INPUT: "User's Gender Entered"
+
 OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
+
 Displays an Error Message if Date Input Left Blank
+
 INPUT: ""
+
 OUTPUT: "Displays Error Message"
+
 Displays an Error Message if Gender Not Chosen
+
 INPUT: ""
+
 OUTPUT: "Display an Error Message"
+
 Clears Form and Reset the Message on Click
+
 INPUT: "Click Reset Button"
+
 OUTPUT: "Clears and Resets the Form"
 
 
