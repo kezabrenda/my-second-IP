@@ -1,6 +1,3 @@
-var currentDate = new Date();
-var currentYear = currentDate.getFullYear();
-
 function selectGender() {
   var gender = document.getElementById("gender").value;
   if (gender == "1") {
