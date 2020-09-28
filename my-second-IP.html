@@ -55,14 +55,11 @@
         <div class="col-md-4 mt30 akan-form">
             <h5 class="fs12">Please Enter Your Birthdate Here:</h5>
             <form id="">
-                <label for="centuryDigits">Century Digits</label>
-                <input type="number" id="centuryDigits" placeholder="eg: 1989 has = 19..."><br>
-    
-                <label for="yearDigits">Year Digits</label>
-                <input type="number" id="yearDigits" placeholder="eg: 1989 has = 89..."><br>
-            
-                <label for="birthMonth">Birth Month</label>
-                <select class="custom-select" id="birthMonth" name="">
+                <label for="year">Birth Year</label>
+                <input type="number" id="year" placeholder="your birthyear..."><br>
+
+                <label for="month">Birth Month</label>
+                <select class="custom-select" id="month" name="">
                     <option value="0">Month...</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -92,7 +89,7 @@
                             <label for="female">&nbsp;&nbsp;Female</label>
                          </div>
                     </div>
-                    <button type="submit" onclick="selectGender(),givenCentury(),givenYear(),givenMonth(),givenDay(),getName(),validDay(), getAkanName() ; return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
+                    <button type="submit" onclick="names() ; return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
                     <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>		
 					</form>	
 				</div>
@@ -104,10 +101,10 @@
 			<div class="col-md-2"></div>
 		</div>
 
-		<footer class="footer"><p>2020 All Rights Reserved. Akan Names Application.</p></footer>
+		<footer class="footer"><p>2020 All Rights Reserved. Akan Names Application.</p>
 	</div>
     <script src="js/bootstrap.min.js"></script>
-    <script src="./JS/my-second-IP.js"></script>
+    <script src="./JS/my-second-IP.js"></script>  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -117,7 +114,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    
+    </footer>
     </div>
 
 </body>
