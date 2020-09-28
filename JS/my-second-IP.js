@@ -1,4 +1,37 @@
   /* */
+  function givenMonth() {
+    var bMonth = document.getElementById("month").value;
+    if (bMonth == "0") {
+    alert("Month must be selected");
+    return false;
+    }
+    else if (bMonth <= 0 || bMonth > 12) {
+    alert("Invalid Month");
+    return false;
+    }
+    }
+    
+    function givenDay() {
+    var day = document.getElementById("DoM").value;
+    if (day == "") {
+    alert("Day must be filled out");
+    return false;
+    }
+    else if (day <= 0 || day > 31) {
+    alert("Invalid Day");
+    return false;
+    }
+    } 
+    
+    function allLetters(input){
+    var characters = /[^a-z]/gi;
+    input.value = input.value.replace(characters, "");
+    }
+    
+    function digits(input){
+    var digits = /[^0-9]/;
+    input.value = input.value.replace(digits, "");
+    }
  
 
   function validDay(){

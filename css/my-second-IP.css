@@ -228,14 +228,21 @@ p.output span {
 }
 
 /**/
+.table {
+    display: flexbox;
+    flex-direction: column;
+    
+}
 .container2{
     width:20%;
     padding: 10px;
     box-sizing: border-box;
+   
 }
 form{
     padding: 5%;
     box-shadow: 2px 2px 5px mediumorchid;
+    right: 100em;
 }
 .custum-select,input[type=text], input[type=number],select{
     width: 100%;
