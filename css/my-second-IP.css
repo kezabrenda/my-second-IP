@@ -38,20 +38,30 @@ img{
 
 @import url("./bootstrap.min.css");
 
+h4,
 body {
     font-family: 'Open Sans',serif;
     padding-top: 54px;
     padding-left: 54px;
     color: #343a40;
+    background-image: url('../images/bg3.jpeg'); 
+    background-color: beige;
+    font-family: 'Griffy', cursive;
+    font-size: x-large;
+    font-weight: 900;
+
 }
 h1{
     text-align: center;
     font-family: serif;
     color: wheat;
-    font-weight: bold;
+    font-weight: bolder;
+  }
+  h4 {
+      text-decoration: coral;
   }
   .bg-image{
-    background-image: url('../images/first.jpg');
+    background-image: url('../images/bg.jpeg');
     padding: 60px;
     background-size: contain;
     opacity: 2.0;
@@ -71,20 +81,21 @@ h1{
   }
   .table table-hover table-striped{
       display: grid;
-      grid: 140px;
+      grid: 50px;
   }
   
 .container2{
-    width:20%;
+    width:100%;
     padding: 10px;
     box-sizing: border-box;
+    display: flex;
 }
 form{
     padding: 5%;
     box-shadow: 2px 2px 5px mediumorchid;
 }
 .custum-select,input[type=text], input[type=number],select{
-    width: 100%;
+    width: 70%;
     padding: 14px 20px;
     margin: 8px 0;
     border: 1px solid violet;
@@ -94,7 +105,7 @@ form{
 
 
 
-input[type=submit]{
+input[type=button]{
     width: 100%;
     background-color: purple;
     color: cyan;
@@ -104,6 +115,6 @@ input[type=submit]{
     border-radius: 4px;
     cursor: pointer;
 }
-input[type=submit]:hover{
+input[type=button]:hover{
     background-color: maroon;
 }
